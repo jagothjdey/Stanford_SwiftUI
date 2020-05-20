@@ -13,6 +13,8 @@
 		299BAA9A2474DB10008FF8E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 299BAA992474DB10008FF8E4 /* Assets.xcassets */; };
 		299BAA9D2474DB10008FF8E4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 299BAA9C2474DB10008FF8E4 /* Preview Assets.xcassets */; };
 		299BAAA02474DB10008FF8E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 299BAA9E2474DB10008FF8E4 /* LaunchScreen.storyboard */; };
+		299BAAA82474F8A8008FF8E4 /* MemoryGameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299BAAA72474F8A8008FF8E4 /* MemoryGameModel.swift */; };
+		299BAAAA2474FA2A008FF8E4 /* MemoryGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299BAAA92474FA2A008FF8E4 /* MemoryGameViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		299BAA9C2474DB10008FF8E4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		299BAA9F2474DB10008FF8E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		299BAAA12474DB11008FF8E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		299BAAA72474F8A8008FF8E4 /* MemoryGameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGameModel.swift; sourceTree = "<group>"; };
+		299BAAA92474FA2A008FF8E4 /* MemoryGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGameViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				299BAA9E2474DB10008FF8E4 /* LaunchScreen.storyboard */,
 				299BAAA12474DB11008FF8E4 /* Info.plist */,
 				299BAA9B2474DB10008FF8E4 /* Preview Content */,
+				299BAAA72474F8A8008FF8E4 /* MemoryGameModel.swift */,
+				299BAAA92474FA2A008FF8E4 /* MemoryGameViewModel.swift */,
 			);
 			path = Stanford_SwiftUI;
 			sourceTree = "<group>";
@@ -148,6 +154,8 @@
 			files = (
 				299BAA942474DB0F008FF8E4 /* AppDelegate.swift in Sources */,
 				299BAA962474DB0F008FF8E4 /* SceneDelegate.swift in Sources */,
+				299BAAAA2474FA2A008FF8E4 /* MemoryGameViewModel.swift in Sources */,
+				299BAAA82474F8A8008FF8E4 /* MemoryGameModel.swift in Sources */,
 				299BAA982474DB0F008FF8E4 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
