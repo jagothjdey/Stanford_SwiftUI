@@ -1,21 +1,37 @@
-//
-//  ContentView.swift
-//  Stanford_SwiftUI
-//
-//  Created by Jagoth Jyoti Dey on 20.05.20.
-//  Copyright © 2020 Jagoth. All rights reserved.
-//
-
 import SwiftUI
 
 struct ContentView: View {
+    @State var flipped : Bool = false
     var body: some View {
-        Text("Hello, World!")
+        VStack(spacing : 5){
+            ForEach(0..<3, id : \.self){ row in
+                HStack(spacing : 5){
+                    ForEach(0..<3, id : \.self){ col in
+                        CardView(flipped: false)
+                    }
+                }
+            }
+        }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+struct CardView : View{
+    var flipped : Bool
+    var body: some View{
+        ZStack{
+            RoundedRectangle(cornerRadius: 16)
+            .fill(self.flipped ? Color.orange : Color.white)
+            .frame(width : 100, height: 100)
+            
+            RoundedRectangle(cornerRadius: 16)
+                .stroke(lineWidth: 3)
+                .frame(width : 100, height: 100)
+            
+            Text("👻")
+                .scaleEffect(4.0)
+                .opacity(self.flipped ? 0 : 1)
+        }
+        .padding()
+        .foregroundColor(Color.orange)
     }
 }
