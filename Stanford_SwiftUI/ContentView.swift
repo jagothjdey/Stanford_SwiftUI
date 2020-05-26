@@ -19,7 +19,6 @@ struct ContentView: View {
 struct CardView : View{
     var card : Model<String>.Card
     
-    
     var body: some View{
         ZStack{
             if card.isFaceUp{

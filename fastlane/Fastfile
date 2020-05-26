@@ -1,0 +1,23 @@
+default_platform(:ios)
+
+platform :ios do
+
+  desc "do basic things like pod install, build app etc."
+  lane :pod do
+    cocoapods(
+      clean_install: true,
+      podfile: "./Podfile"
+    )
+  end
+
+  desc "do testing and take screenshot"
+  lane : screenshot do
+    snapshot
+  end
+
+  desc "Push a new release build to the App Store"
+  lane :release do
+    build_app(scheme: "Stanford_SwiftUI")
+    upload_to_app_store(skip_metadata: true, skip_screenshots: true)
+  end
+end
